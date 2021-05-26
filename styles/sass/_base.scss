@@ -1,0 +1,30 @@
+@import "./mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+
+  @include resp(for-tablet-port) {
+    font-size: 20%;
+  }
+
+  @include resp(for-tablet-land) {
+    font-size: 50%;
+  }
+
+  @include resp(for-desktop-big) {
+    font-size: 75%;
+  }
+}
+
+body {
+  width: 100%;
+}
