@@ -37,9 +37,9 @@ body {
       height: auto; } }
 
 .pricing {
-  margin-top: 10rem;
+  margin-top: 7rem;
   min-width: 100%;
-  height: 65rem;
+  height: 70rem;
   background-color: #fff;
   color: #6c63ff; }
   @media (max-width: 56.25em) {
@@ -48,8 +48,15 @@ body {
 
 .contact {
   min-width: 100%;
-  height: 55rem;
+  min-height: 55rem;
   background-color: #f2f2fc; }
+  @media (max-width: 56.25em) {
+    .contact {
+      height: auto;
+      margin-top: 5.5rem; } }
+  @media (max-width: 37.43em) {
+    .contact {
+      margin-top: 5.5rem; } }
 
 .menu-wrap {
   position: fixed;
@@ -295,7 +302,14 @@ body {
   font-weight: 300;
   text-align: center;
   color: #6c63ff;
-  justify-self: flex-start; }
+  justify-self: flex-start;
+  margin-bottom: 2rem; }
+  @media (max-width: 56.25em) {
+    .about-header {
+      margin-top: 3rem; } }
+  @media (max-width: 37.43em) {
+    .about-header {
+      margin-top: 5rem; } }
 
 .about-main-cont {
   color: #6c63ff;
@@ -525,10 +539,6 @@ body {
   .contact-form .submit:hover {
     color: #fff;
     background-color: #6c63ff; }
-
-@media (max-width: 56.25em) {
-  .margin-bot-big {
-    margin-bottom: 10rem; } }
 
 /*!
  * Hamburgers

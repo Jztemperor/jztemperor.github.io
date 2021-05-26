@@ -310,6 +310,15 @@
   text-align: center;
   color: #6c63ff;
   justify-self: flex-start;
+  margin-bottom: 2rem;
+
+  @include resp(for-tablet-port) {
+    margin-top: 3rem;
+  }
+
+  @include resp(for-phone-only) {
+    margin-top: 5rem;
+  }
 }
 
 .about-main-cont {
@@ -598,12 +607,5 @@
   .submit:hover {
     color: #fff;
     background-color: #6c63ff;
-  }
-}
-
-//Utility
-.margin-bot-big {
-  @include resp(for-tablet-port) {
-    margin-bottom: 10rem;
   }
 }
