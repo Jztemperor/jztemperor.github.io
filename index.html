@@ -193,9 +193,9 @@
 
             <div class="contact-form">
                 <form id="form" action="#">
-                    <input type="text" name="name" placeholder="NAME" id="name">
-                    <input type="text" name="email" placeholder="E-MAIL" id="email">
-                    <textarea placeholder="MESSAGE" id="msg" name="msg"></textarea>
+                    <input type="text" name="name" placeholder="NAME" id="name" required> 
+                    <input type="text" name="email" placeholder="E-MAIL" id="email" required>
+                    <textarea placeholder="MESSAGE" id="msg" name="msg" required></textarea>
                     <input type="submit" class="submit" name="submit" id="submit" value="SEND">
 
                     <p id="form-msg">
@@ -239,13 +239,16 @@
                    submit: submit
                },
                success: function(data){
-                   alert(data);
+                   
                    //If there is an error clear the input fields
                    if(data !== ""){
                        $('#name').val("");
                        $('#email').val("");
                        $('#msg').val("");
                        
+                       alert(data);
+                   }else{
+                       alert("Email sent successfuly")
                    }
                }
            }); 
